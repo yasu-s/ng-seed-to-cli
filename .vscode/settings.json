@@ -1,0 +1,12 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "search.exclude": {
+        "**/coverage_js": true,
+        "**/coverage": true,
+        "**/dist": true
+    },
+    "tslint.alwaysShowStatus": true,
+    "tslint.alwaysShowRuleFailuresAsWarnings": true,
+    "tslint.configFile": "tslint.json"
+}
