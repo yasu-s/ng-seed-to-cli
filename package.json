@@ -2,10 +2,6 @@
   "name": "angular-seed",
   "version": "1.0.0",
   "description": "Modular starter project for Angular 2 (and beyond) with statically typed build and AoT compilation",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mgechev/angular-seed"
-  },
   "scripts": {
     "build.tools": "tsc && gulp build.tools --color",
     "build.dev": "gulp build.dev --color --env-config dev",
@@ -24,14 +20,12 @@
     "lint": "gulp tslint",
     "karma": "karma",
     "karma.start": "karma start",
-    "postinstall": "gulp check.versions && gulp bundle.rxjs && gulp print.banner",
     "reinstall": "npm cache clean && npm install",
     "serve.coverage": "gulp serve.coverage --color",
     "serve.dev": "gulp serve.dev --color --env-config dev",
     "serve.prod": "gulp serve.prod --color --env-config prod --build-type prod",
     "serve.prod.aot": "gulp serve.prod.aot --color --env-config prod --build-type prod",
     "serve.prod.exp": "gulp serve.prod.aot --color --env-config prod --build-type prod",
-    "serve.prod.rollup.aot": "gulp serve.prod.rollup.aot --color --env-config prod --build-type prod",
     "sme.prod": "gulp sme.prod --color --env-config prod --build-type prod --preserve-source-maps",
     "sme.prod.aot": "gulp sme.prod.aot --color --env-config prod --build-type prod --preserve-source-maps",
     "sme.prod.rollup.aot": "gulp sme.prod.rollup.aot --color --env-config prod --build-type prod --preserve-source-maps",
@@ -39,10 +33,9 @@
     "start.deving": "gulp start.deving --color",
     "tasks.list": "gulp --tasks-simple --color",
     "test": "gulp test --color",
-    "e2e.ci": "gulp build.prod.rollup.aot --color && gulp e2e --color",
     "tests.all": "npm test && npm run e2e.ci",
-    "compodoc": "./node_modules/.bin/compodoc -p src/client/tsconfig.json",
-    "serve.compodoc": "./node_modules/.bin/compodoc -s"
+    "ng": "ng",
+    "ngtest": "ng test"
   },
   "author": "Minko Gechev <mgechev>",
   "license": "MIT",
@@ -51,11 +44,12 @@
     "npm": ">=3.10.3"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "^6.0.1",
-    "@angular/language-service": "^6.0.1",
+    "@angular/compiler-cli": "^6.0.5",
+    "@angular-devkit/build-angular": "~0.6.5",
+    "typescript": "2.7.x",
+    "@angular/cli": "~6.0.8",
+    "@angular/language-service": "^6.0.5",
     "@angular/platform-server": "^6.0.1",
-    "@bahmutov/add-typescript-to-cypress": "^2.0.0",
-    "@compodoc/compodoc": "^1.1.1",
     "@types/async": "^2.0.48",
     "@types/browser-sync": "^0.0.39",
     "@types/express": "^4.11.1",
@@ -77,7 +71,6 @@
     "codelyzer": "^4.2.1",
     "connect-history-api-fallback": "^1.5.0",
     "cssnano": "^3.10.0",
-    "cypress": "^2.0.0",
     "deep-extend": "^0.5.1",
     "event-stream": "^3.3.4",
     "express": "~4.16.3",
@@ -120,10 +113,6 @@
     "open": "0.0.5",
     "remap-istanbul": "^0.11.0",
     "rimraf": "^2.6.2",
-    "rollup": "~0.58.0",
-    "rollup-plugin-commonjs": "^9.0.0",
-    "rollup-plugin-includepaths": "0.2.2",
-    "rollup-plugin-node-resolve": "^3.3.0",
     "run-sequence": "^2.2.1",
     "semver": "^5.5.0",
     "serve-static": "^1.13.1",
@@ -136,9 +125,9 @@
     "traceur": "^0.0.111",
     "ts-node": "^6.0.0",
     "tslint": "^5.9.1",
-    "typescript": "2.7.x",
     "walk": "^2.3.13",
-    "yargs": "^11.0.0"
+    "yargs": "^11.0.0",
+    "webpack": "~4.14.0"
   },
   "dependencies": {
     "@angular-devkit/build-optimizer": "^0.6.1",
