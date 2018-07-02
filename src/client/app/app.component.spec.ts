@@ -52,6 +52,12 @@ export function main() {
   });
 }
 
+describe('App component', () => {
+    it ('aaa', () => {
+        expect('').toBe('aaa');
+    });
+});
+
 @Component({
   selector: 'test-cmp',
   template: '<sd-app></sd-app>'

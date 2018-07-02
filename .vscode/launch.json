@@ -11,15 +11,28 @@
       "webRoot": "${workspaceRoot}/src/client",
       "sourceMapPathOverrides": {
         "app/*": "${webRoot}/app/*"
-      }
+      },
+      "runtimeArgs": [
+        "--remote-debugging-port=9222"
+      ]
     },
     {
-      "name": "Attach to Chrome, with sourcemaps",
+      "name": "Attach to Chrome",
       "type": "chrome",
       "request": "attach",
       "port": 9222,
       "sourceMaps": true,
       "webRoot": "${workspaceRoot}/src/client",
+      "sourceMapPathOverrides": {
+        "app/*": "${webRoot}/app/*"
+      }
+    },
+    {
+      "name": "Attach to Chrome -default",
+      "type": "chrome",
+      "request": "attach",
+      "port": 9222,
+      "sourceMaps": true,
       "sourceMapPathOverrides": {
         "app/*": "${webRoot}/app/*"
       }
