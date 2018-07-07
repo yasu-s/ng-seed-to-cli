@@ -17,7 +17,7 @@
       ]
     },
     {
-      "name": "Attach to Chrome",
+      "name": "Attach to Chrome - Angular seed",
       "type": "chrome",
       "request": "attach",
       "port": 9222,
@@ -32,10 +32,7 @@
       "type": "chrome",
       "request": "attach",
       "port": 9222,
-      "sourceMaps": true,
-      "sourceMapPathOverrides": {
-        "app/*": "${webRoot}/app/*"
-      }
+      "sourceMaps": true
     }
   ]
 }
