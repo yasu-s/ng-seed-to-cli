@@ -37,6 +37,7 @@
     "tests.all": "npm test && npm run e2e.ci",
     "ng": "ng",
     "ng:test": "ng test",
+    "ng:test-coverage": "ng test --code-coverage --browsers ChromeHeadless --watch false",
     "karma.start-debug": "karma start ./config/karma.conf.debug.js"
   },
   "license": "MIT",

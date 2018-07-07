@@ -1,7 +1,7 @@
 {
     "compileOnSave": false,
     "compilerOptions": {
-        "baseUrl": "../client",
+        "baseUrl": "../../src/client",
         "outDir": "../../dist/out-tsc",
         "module": "commonjs",
         "types": [
@@ -27,7 +27,7 @@
         "polyfills.ts"
     ],
     "include": [
-        "../client/**/*.spec.ts",
-        "../client/**/*.d.ts"
+        "../../src/client/**/*.spec.ts",
+        "../../src/client/**/*.d.ts"
     ]
 }
