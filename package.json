@@ -1,7 +1,7 @@
 {
-  "name": "angular-seed",
+  "name": "angular-seed-2-cli",
   "version": "1.0.0",
-  "description": "Modular starter project for Angular 2 (and beyond) with statically typed build and AoT compilation",
+  "description": "Angular seed to cli",
   "scripts": {
     "build.tools": "tsc && gulp build.tools --color",
     "build.dev": "gulp build.dev --color --env-config dev",
@@ -38,9 +38,8 @@
     "tests.all": "npm test && npm run e2e.ci",
     "ng": "ng",
     "ngtest:sample": "ng test --browsers ChromeDebug",
-    "ngtest:debug": "ng test app2 --browsers ChromeDebug"
+    "ngtest:debug": "ng test test-debug"
   },
-  "author": "Minko Gechev <mgechev>",
   "license": "MIT",
   "engines": {
     "node": ">=6.9.0",

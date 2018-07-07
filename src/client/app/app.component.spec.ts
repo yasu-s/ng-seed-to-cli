@@ -18,44 +18,38 @@ import { AboutComponent } from './about/about.component';
 import { ToolbarComponent } from './core/toolbar/toolbar.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 
-export function main() {
+export function main() { /* Angular seed define */ }
 
-  describe('App component', () => {
+describe('App component', () => {
 
     const config: Route[] = [
-      { path: '', component: HomeComponent },
-      { path: 'about', component: AboutComponent }
+        { path: '', component: HomeComponent },
+        { path: 'about', component: AboutComponent }
     ];
     beforeEach(() => {
-      TestBed.configureTestingModule({
-        imports: [FormsModule, RouterTestingModule.withRoutes(config)],
-        declarations: [TestComponent, ToolbarComponent,
-          NavbarComponent, AppComponent,
-          HomeComponent, AboutComponent],
-        providers: [
-          { provide: APP_BASE_HREF, useValue: '/' }
-        ]
-      });
+        TestBed.configureTestingModule({
+            imports: [FormsModule, RouterTestingModule.withRoutes(config)],
+            declarations: [
+                TestComponent, ToolbarComponent,
+                NavbarComponent, AppComponent,
+                HomeComponent, AboutComponent
+            ],
+            providers: [
+                { provide: APP_BASE_HREF, useValue: '/' }
+            ]
+        });
     });
 
-    it('should build without a problem',
-      async(() => {
+    it('should build without a problem', async(() => {
         TestBed
-          .compileComponents()
-          .then(() => {
+        .compileComponents()
+        .then(() => {
             const fixture = TestBed.createComponent(TestComponent);
             const compiled = fixture.nativeElement;
 
             expect(compiled).toBeTruthy();
-          });
-      }));
-  });
-}
-
-describe('App component', () => {
-    it ('aaa', () => {
-        expect('').toBe('aaa');
-    });
+        });
+    }));
 });
 
 @Component({

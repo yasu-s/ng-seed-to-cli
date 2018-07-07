@@ -28,7 +28,7 @@
       }
     },
     {
-      "name": "Attach to Chrome -default",
+      "name": "Attach to Chrome - Angular CLI",
       "type": "chrome",
       "request": "attach",
       "port": 9222,
