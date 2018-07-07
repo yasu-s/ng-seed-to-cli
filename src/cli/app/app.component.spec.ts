@@ -42,5 +42,6 @@ describe('AppComponent', () => {
         tick();
 
         // verify
+        expect('aaa').toBe('');
     }));
 });

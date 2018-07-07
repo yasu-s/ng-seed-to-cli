@@ -21,7 +21,7 @@ module.exports = function (config) {
             reports: ['html', 'lcovonly'],
             fixWebpackSourcePaths: true
         },
-        reporters: ['spec'],
+        reporters: ['spec', 'kjhtml'],
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,
@@ -36,6 +36,10 @@ module.exports = function (config) {
                     '--disable-gpu',
                     '--remote-debugging-port=9222',
                 ],
+            },
+            ChromeDebug: {
+                base: 'Chrome',
+                flags: ['--remote-debugging-port=9222']
             }
         }
     });
