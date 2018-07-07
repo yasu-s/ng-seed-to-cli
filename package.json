@@ -20,7 +20,6 @@
     "lint": "gulp tslint",
     "karma": "karma",
     "karma.start": "karma start",
-    "karma.start-debug": "karma start ./karma.conf.debug.js",
     "postinstall": "gulp check.versions && gulp bundle.rxjs",
     "reinstall": "npm cache clean && npm install",
     "serve.coverage": "gulp serve.coverage --color",
@@ -37,8 +36,8 @@
     "test": "gulp test --color",
     "tests.all": "npm test && npm run e2e.ci",
     "ng": "ng",
-    "ngtest:sample": "ng test --browsers ChromeDebug",
-    "ngtest:debug": "ng test test-debug"
+    "ng:test": "ng test",
+    "karma.start-debug": "karma start ./config/karma.conf.debug.js"
   },
   "license": "MIT",
   "engines": {

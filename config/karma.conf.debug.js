@@ -8,7 +8,7 @@ var minimatch = require('minimatch');
 module.exports = function(config) {
   config.set({
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: './',
+    basePath: '../',
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
@@ -116,16 +116,4 @@ module.exports = function(config) {
       files: argv.files ? minimatch.makeRe(argv.files).source : null
     }
   });
-
-  if (process.env.APPVEYOR) {
-    config.browsers = ['IE'];
-    config.singleRun = true;
-    config.browserNoActivityTimeout = 90000; // Note: default value (10000) is not enough
-  }
-
-  if (process.env.TRAVIS || process.env.CIRCLECI) {
-    config.browsers = ['Chrome_travis_ci'];
-    config.singleRun = true;
-    config.browserNoActivityTimeout = 90000;
-  }
 };
