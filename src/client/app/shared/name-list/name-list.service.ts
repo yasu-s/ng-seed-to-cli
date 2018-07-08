@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { Observable, of } from 'rxjs';
-import { catchError, tap, map } from 'rxjs/operators';
+import { catchError } from 'rxjs/operators';
 
 /**
  * This class provides the NameList service with methods to read names and add names.
@@ -26,10 +26,6 @@ export class NameListService {
                     .pipe(
     //                tap((data: string[]) => console.log('server data:', data)), // debug
                       catchError(this.handleError));
-  }
-
-  get2(): Observable<string[]> {
-    return this.http.get<string[]>('assets/data.json').pipe(map(d => d));
   }
 
   /**

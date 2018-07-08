@@ -18,8 +18,6 @@ import { AboutComponent } from './about/about.component';
 import { ToolbarComponent } from './core/toolbar/toolbar.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 
-export function main() { /* Angular seed define */ }
-
 describe('App component', () => {
 
     const config: Route[] = [

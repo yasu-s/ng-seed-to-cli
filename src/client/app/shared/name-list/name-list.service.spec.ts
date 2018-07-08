@@ -4,8 +4,6 @@ import { NameListService } from './name-list.service';
 
 import { Observable } from 'rxjs';
 
-export function main() { /* Angular seed define */ }
-
 describe('NameList Service', () => {
 
     let nameListService: NameListService;

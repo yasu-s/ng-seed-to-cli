@@ -9,8 +9,6 @@ import { Observable } from 'rxjs';
 import { HomeComponent } from './home.component';
 import { NameListService } from '../shared/name-list/name-list.service';
 
-export function main() { /* Angular seed define */ }
-
 describe('Home component', () => {
 
     beforeEach(() => {
