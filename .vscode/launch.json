@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch Chrome against localhost, with sourcemaps",
+      "name": "Launch Chrome",
       "type": "chrome",
       "preLaunchTask": "start",
       "request": "launch",

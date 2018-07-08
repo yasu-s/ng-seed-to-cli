@@ -17,9 +17,13 @@
                         "polyfills": "config/ng-cli/polyfills.ts",
                         "tsConfig": "config/ng-cli/tsconfig.spec.json",
                         "karmaConfig": "config/ng-cli/karma.conf.js",
-                        "styles": [],
+                        "styles": [
+                            "src/client/css"
+                        ],
                         "scripts": [],
-                        "assets": [],
+                        "assets": [
+                            "src/client/assets"
+                        ],
                         "fileReplacements": [
                             {
                                 "replace": "src/client/app/shared/config/env.config.ts",
