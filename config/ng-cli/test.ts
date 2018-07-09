@@ -17,4 +17,9 @@ getTestBed().initTestEnvironment(
 // Then we find all the tests.
 const context = require.context('../../src/client/', true, /\.spec\.ts$/);
 // And load the modules.
-context.keys().map(context);
+context.keys().map(key => {
+    if (context(key).hasOwnProperty('main')) {
+        context(key).main();
+    }
+    return key;
+}).map(context);

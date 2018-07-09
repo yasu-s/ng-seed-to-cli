@@ -4,6 +4,17 @@ import { NameListService } from './name-list.service';
 
 import { Observable } from 'rxjs';
 
+export function main() {
+    describe('main', () => {
+        it('main test', () => {
+            expect('aaa').toBe('aaa');
+        });
+    });
+}
+
+export function testMain() {
+}
+
 describe('NameList Service', () => {
 
     let nameListService: NameListService;
