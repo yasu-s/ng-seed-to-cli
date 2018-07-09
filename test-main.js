@@ -36,8 +36,9 @@ Promise.all([
       .map(file2moduleName)
       .map(function (path) {
         return System.import(path).then(function (module) {
-        //   if (module.hasOwnProperty('main')) {
-        //     module.main();
+            if (module.hasOwnProperty('main')) {
+                module.main();
+            }
         //   } else {
         //     throw new Error('Module ' + path + ' does not implement main() method.');
         //   }

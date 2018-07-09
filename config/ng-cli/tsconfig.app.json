@@ -1,0 +1,35 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": "../../src/client",
+        "outDir": "../../dist/out-tsc/app",
+        "module": "commonjs",
+        "types": [
+            "node"
+        ],
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es5",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "lib": [
+            "es2017",
+            "dom"
+        ]
+    },
+    "include": [
+        "main.ts",
+        "polyfills.ts",
+        "../../src/client/**/*.ts",
+        "../../tools/env/**/*.ts"
+    ],
+    "exclude": [
+        "../../src/client/**/*.spec.ts",
+        "../../src/client/system-config.ts",
+        "../../src/client/app/main-prod.ts",
+    ]
+}
