@@ -24,7 +24,13 @@
                         "styles": [
                             "src/client/css/main.css"
                         ],
-                        "scripts": []
+                        "scripts": [],
+                        "fileReplacements": [
+                            {
+                                "replace": "src/client/app/shared/config/env.config.ts",
+                                "with": "src/client/app/shared/config/env.config.dev.ts"
+                            }
+                        ]
                     },
                     "configurations": {
                         "production": {
