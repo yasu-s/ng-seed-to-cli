@@ -60,7 +60,9 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
                         "browserTarget": "main-proj:build",
-                        "port": 4200
+                        "port": 4200,
+                        "hmr": true,
+                        "hmrWarning": true
                     },
                     "configurations": {
                         "production": {
