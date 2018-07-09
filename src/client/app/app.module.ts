@@ -10,6 +10,7 @@ import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 
+const BASE_HREF = ('<%= APP_BASE %>'.indexOf('= APP_BASE') >= 0) ? '/' : '<%= APP_BASE %>';
 
 @NgModule({
   imports: [BrowserModule, CoreModule,
@@ -19,7 +20,7 @@ import { CoreModule } from './core/core.module';
   declarations: [AppComponent],
   providers: [{
     provide: APP_BASE_HREF,
-    useValue: '<%= APP_BASE %>'
+    useValue: BASE_HREF
   }],
   bootstrap: [AppComponent]
 

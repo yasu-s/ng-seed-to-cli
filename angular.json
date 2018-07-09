@@ -5,7 +5,7 @@
     "projects": {
         "main-proj": {
             "root": "",
-            "sourceRoot": "src",
+            "sourceRoot": "src/client",
             "projectType": "application",
             "prefix": "app",
             "schematics": {},
@@ -14,7 +14,7 @@
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
                         "outputPath": "dist/app",
-                        "index": "src/client/index.html",
+                        "index": "config/ng-cli/index.html",
                         "main": "config/ng-cli/main.ts",
                         "polyfills": "config/ng-cli/polyfills.ts",
                         "tsConfig": "config/ng-cli/tsconfig.app.json",
