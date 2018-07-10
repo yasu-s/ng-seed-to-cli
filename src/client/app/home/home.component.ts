@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NameListService } from '../shared/name-list/name-list.service';
+import * as moment from 'moment';
 
 /**
  * This class represents the lazy loaded HomeComponent.
@@ -50,6 +51,8 @@ export class HomeComponent implements OnInit {
     // TODO: implement nameListService.post
     this.names.push(this.newName);
     this.newName = '';
+    const aa = moment(new Date());
+    console.log(aa);
     return false;
   }
 

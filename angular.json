@@ -80,7 +80,9 @@
                         "styles": [
                             "src/client/css"
                         ],
-                        "scripts": [],
+                        "scripts": [
+                            "node_modules/moment/min/moment.min.js"
+                        ],
                         "assets": [
                             "src/client/assets"
                         ],
