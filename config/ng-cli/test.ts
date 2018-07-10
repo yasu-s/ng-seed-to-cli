@@ -14,12 +14,18 @@ getTestBed().initTestEnvironment(
   BrowserDynamicTestingModule,
   platformBrowserDynamicTesting()
 );
+
 // Then we find all the tests.
-const context = require.context('../../src/client/', true, /\.spec\.ts$/);
-// And load the modules.
-context.keys().map(key => {
-    if (context(key).hasOwnProperty('main')) {
-        context(key).main();
-    }
-    return key;
-}).map(context);
+const items = [
+    require.context('../../src/client/', true, /\.spec\.ts$/)
+];
+
+for (const ctx of items) {
+    // And load the modules.
+    ctx.keys().map(key => {
+        if (ctx(key).hasOwnProperty('main')) {
+            ctx(key).main();
+        }
+        return key;
+    }).map(ctx);
+}
