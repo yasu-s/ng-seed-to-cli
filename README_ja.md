@@ -31,7 +31,7 @@ devDependenciesに以下を追加する。
 
 ### Angular Seed の設定ファイル置き換え  
 
-src/client/app/shared/config/env.config.ts はAngular Seed の tools/env/dev.ts 等からAngularSeedでのビルド時に設定を読み込みます。  
+src/client/app/shared/config/env.config.ts は Angular Seed の tools/env/dev.ts 等からAngularSeedでのビルド時に設定を読み込みます。  
 Angular CLI ではビルドエラーになるのでビルド時に設定ファイルを差し替えます。
 
 ```
