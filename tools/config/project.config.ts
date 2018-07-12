@@ -1,7 +1,7 @@
 import { join } from 'path';
 
 import { SeedConfig } from './seed.config';
-// import { ExtendPackages } from './seed.config.interfaces';
+import { ExtendPackages } from './seed.config.interfaces';
 
 /**
  * This class extends the basic seed configuration, allowing for project specific overrides. A few examples can be found
@@ -50,6 +50,13 @@ export class ProjectConfig extends SeedConfig {
     // }];
     //
     // this.addPackagesBundles(additionalPackages);
+    const additionalPackages: ExtendPackages[] = [{
+        name: '@sample/',
+        path: `${this.APP_BASE}app/`
+    }];
+
+    this.addPackagesBundles(additionalPackages);
+
 
     /* Add proxy middleware */
     // this.PROXY_MIDDLEWARE = [
@@ -57,7 +64,7 @@ export class ProjectConfig extends SeedConfig {
     // ];
 
     /* Add to or override NPM module configurations: */
-    // this.PLUGIN_CONFIGS['browser-sync'] = { ghostMode: false };
+    this.PLUGIN_CONFIGS['browser-sync'] = { ghostMode: false };
   }
 
 }

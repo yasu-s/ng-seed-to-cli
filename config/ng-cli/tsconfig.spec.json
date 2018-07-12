@@ -20,7 +20,10 @@
         "lib": [
             "es2017",
             "dom"
-        ]
+        ],
+        "paths": {
+            "@sample/*": ["../../src/client/app/*"]
+        }
     },
     "files": [
         "test.ts",

@@ -7,7 +7,7 @@ import {
 import { Observable } from 'rxjs';
 
 import { HomeComponent } from './home.component';
-import { NameListService } from '../shared/name-list/name-list.service';
+import { NameListService } from '@sample/shared/name-list/name-list.service';
 
 describe('Home component', () => {
 
