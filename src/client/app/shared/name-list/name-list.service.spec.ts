@@ -12,9 +12,6 @@ export function main() {
     });
 }
 
-export function testMain() {
-}
-
 describe('NameList Service', () => {
 
     let nameListService: NameListService;
