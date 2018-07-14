@@ -48,16 +48,16 @@ npm run ng:serve
         <th>概要</th>
     </tr>
     <tr>
-        <td>`npm start`</td>
+        <td><strong>npm start</strong></td>
         <td>デバッグ実行を行います。</td>
     </tr>
     <tr>
-        <td>`npm run test`</td>
+        <td><strong>npm run test</strong></td>
         <td>単体テストが実行されます。</td>
     </tr>
     <tr>
-        <td>`npm run karma.start-debug`</td>
-        <td>`npm run test`実行後、デバッグ実行できます。</td>
+        <td><strong>npm run karma.start-debug</strong></td>
+        <td><strong>npm run test</strong>実行後、デバッグ実行できます。</td>
     </tr>
 </table>
 
@@ -69,12 +69,12 @@ npm run ng:serve
         <th>概要</th>
     </tr>
     <tr>
-        <td>`npm ng:serve`</td>
+        <td><strong>npm ng:serve</strong></td>
         <td>デバッグ実行を行います。</td>
     </tr>
     <tr>
-        <td>`npm run ng:test`</td>
-        <td>UTが実行されます。</td>
+        <td><strong>npm run ng:test</strong></td>
+        <td>単体テストが実行されます。</td>
     </tr>
 </table>
 
