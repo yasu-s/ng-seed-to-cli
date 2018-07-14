@@ -28,7 +28,11 @@
     ],
     "plugins": [
         { "name": "@angular/language-service" }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+        "@sample/*": ["src/client/app/*"]
+    }
   },
   "files": [
     "gulpfile.ts",

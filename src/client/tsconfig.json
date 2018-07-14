@@ -19,7 +19,7 @@
     "allowSyntheticDefaultImports": true,
     "typeRoots": ["../../node_modules/@types", "../../node_modules"],
     "types": ["node", "jasmine", "systemjs"],
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
         "@sample/*": ["app/*"]
     }

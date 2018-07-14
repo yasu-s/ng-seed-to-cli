@@ -53,6 +53,7 @@ module.exports = function(config) {
 
       'test-config.js',
       { pattern: 'dist/dev/system-config.js', watched: true, included: true },
+      'config/test-config-override.js',
 
       { pattern: 'dist/dev/**/*.js', included: false, watched: true },
       { pattern: 'dist/dev/**/*.html', included: false, watched: true, served: true },
