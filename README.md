@@ -69,7 +69,7 @@ npm run ng:serve
         <th>Overview</th>
     </tr>
     <tr>
-        <td><strong>npm ng:serve</strong></td>
+        <td><strong>npm run ng:serve</strong></td>
         <td>Execute debugging.</td>
     </tr>
     <tr>
