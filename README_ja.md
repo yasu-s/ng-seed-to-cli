@@ -69,7 +69,7 @@ npm run ng:serve
         <th>概要</th>
     </tr>
     <tr>
-        <td><strong>npm ng:serve</strong></td>
+        <td><strong>npm run ng:serve</strong></td>
         <td>デバッグ実行を行います。</td>
     </tr>
     <tr>
