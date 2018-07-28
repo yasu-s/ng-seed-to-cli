@@ -11,7 +11,7 @@ Sample project to migrate project created with Angular Seed to Angular CLI.
 
 # Operation check  
 
-## 1. Download Sampke
+## 1. Download Sample
 
 ```
 git clone git@github.com:yasu-s/ng-seed-to-cli.git
